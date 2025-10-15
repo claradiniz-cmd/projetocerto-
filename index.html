@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Academia de Luxo — Início</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Academia de Luxo</a>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Transforme habilidade em posição de valor.</h1>
+          <p class="lead">Cursos premium para profissionais criativos e empreendedores que buscam um posicionamento elegante, conhecimento aplicável e resultados reais.</p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="cursos.html">Explorar Cursos</a>
+            <a class="btn outline" href="#por-que">Por que nos escolher</a>
+          </div>
+
+          <ul class="highlights">
+            <li><strong>6+ cursos</strong> com conteúdo prático</li>
+            <li><strong>Certificado digital</strong> & acesso vitalício</li>
+            <li><strong>Mentoria</strong> e comunidade exclusiva</li>
+          </ul>
+        </div>
+
+        <div class="hero-media">
+          <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=1a2b3c" alt="Estilo elegante">
+          <div class="hero-card">
+            <h4>Curso em destaque</h4>
+            <p class="muted">Design Elegante para Web</p>
+            <div class="card-actions">
+              <a class="btn small outline" href="cursos.html#design">Ver curso</a>
+              <button class="btn small primary" onclick="location.href='curso.html?id=design'">Inscrever-se</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY -->
+    <section id="por-que" class="container por-que">
+      <h2>Por que escolher a Academia de Luxo</h2>
+      <div class="grid-3">
+        <div class="box">
+          <h3>Conteúdo Premium</h3>
+          <p>Material objetivo, exercícios reais e modelos prontos para uso comercial.</p>
+        </div>
+        <div class="box">
+          <h3>Professores do Mercado</h3>
+          <p>Instrutores com portfólio comprovado e atuação em projetos reais.</p>
+        </div>
+        <div class="box">
+          <h3>Comunidade VIP</h3>
+          <p>Networking, feedbacks e oportunidades de parceria.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTAQUE CURSOS -->
+    <section class="container destaque">
+      <h2>Cursos em destaque</h2>
+      <div id="destaque-list" class="grid-destaque">
+        <!-- preenchido por JS -->
+      </div>
+      <div class="ver-todos">
+        <a class="btn outline" href="cursos.html">Ver todos os cursos</a>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="container depoimentos">
+      <h2>Depoimentos</h2>
+      <div class="depo-grid" id="depoimentos-list">
+        <!-- por JS -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Academia de Luxo</strong>
+        <p>Excelência em formação criativa e estratégica.</p>
+      </div>
+      <div class="footer-links">
+        <a href="cursos.html">Cursos</a>
+        <a href="#por-que">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </div>
+    </div>
+    <div class="copyright">© 2025 Academia de Luxo</div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', renderDestaque);</script>
+</body>
+</html>

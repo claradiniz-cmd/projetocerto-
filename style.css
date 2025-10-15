@@ -1,0 +1,112 @@
+/* Tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap');
+
+:root{
+  --bg: #fbfaf8;
+  --card: #fff;
+  --gold: #cfa859;
+  --gold-2: #b78f3a;
+  --muted: #6b6b6b;
+  --accent: #f6f2ec;
+  --shadow: rgba(12,12,12,0.06);
+}
+
+/* Reset */
+*{box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:var(--bg);color:#111;margin:0;line-height:1.5}
+.container{width:90%;max-width:1150px;margin:0 auto}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:50;background:transparent;padding:18px 0}
+.nav{display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:'Playfair Display',serif;color:var(--gold);font-size:1.4rem;text-decoration:none}
+.nav nav a{margin-left:18px;color:#222;text-decoration:none;font-weight:600}
+.nav nav a.active{color:var(--gold)}
+
+/* Buttons */
+.btn{display:inline-block;padding:10px 16px;border-radius:999px;text-decoration:none;font-weight:700;cursor:pointer;border:2px solid transparent}
+.btn.primary{background:linear-gradient(180deg,var(--gold),var(--gold-2));color:#fff;box-shadow:0 8px 24px var(--shadow)}
+.btn.outline{background:transparent;border-color:var(--gold);color:var(--gold)}
+.btn.ghost{background:transparent;border:1px solid rgba(0,0,0,0.06);color:#111}
+.btn.small{padding:8px 12px;font-size:.9rem}
+
+/* Hero */
+.hero{padding:64px 0}
+.hero-grid{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center}
+.hero-text h1{font-family:'Playfair Display',serif;font-size:2.4rem;margin:0;color:#0b0b0b}
+.lead{color:var(--muted);margin-top:12px}
+.hero-ctas{margin-top:18px;display:flex;gap:12px}
+.highlights{list-style:none;padding:0;margin:18px 0 0 0;display:flex;gap:18px}
+.highlights li{background:var(--card);padding:10px 14px;border-radius:10px;box-shadow:0 8px 20px var(--shadow);font-weight:600;color:var(--muted)}
+
+.hero-media{position:relative}
+.hero-media img{width:100%;height:320px;object-fit:cover;border-radius:12px;box-shadow:0 12px 36px var(--shadow)}
+.hero-card{position:absolute;left:20px;bottom:-20px;background:var(--card);padding:14px;border-radius:10px;box-shadow:0 10px 30px var(--shadow);width:260px;border-left:4px solid var(--gold)}
+
+/* Sections */
+.por-que{padding:48px 0}
+.por-que h2{text-align:center;font-family:'Playfair Display',serif;color:var(--gold);margin-bottom:22px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.box{background:var(--card);padding:20px;border-radius:10px;box-shadow:0 8px 24px var(--shadow)}
+.box h3{font-family:'Playfair Display',serif;margin-top:0;color:#222}
+
+/* Destaque cursos */
+.destaque{padding:48px 0}
+.grid-destaque{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.card-destaque{background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 12px 36px var(--shadow);transition:transform .28s ease}
+.card-destaque:hover{transform:translateY(-8px)}
+.card-destaque img{width:100%;height:170px;object-fit:cover}
+.card-body{padding:16px}
+.card-body h4{font-family:'Playfair Display',serif;color:var(--gold);margin:0}
+.card-body p{color:var(--muted);margin:8px 0}
+.card-actions{display:flex;gap:8px;margin-top:8px}
+
+/* Depoimentos */
+.depoimentos{padding:48px 0}
+.depo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.depo{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 10px 30px var(--shadow)}
+.depo p{margin:0;color:var(--muted)}
+
+/* Cursos page */
+.search-wrap{display:flex;gap:12px;align-items:center;padding:28px 0}
+.search-wrap input{flex:1;padding:12px 14px;border-radius:12px;border:1px solid #eee;background:#fff}
+.grid-cursos{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;padding-bottom:40px}
+.curso-card{background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 12px 36px var(--shadow);transition:transform .25s ease}
+.curso-card:hover{transform:translateY(-6px)}
+.curso-media img{width:100%;height:200px;object-fit:cover}
+.curso-content{padding:16px}
+.curso-content h3{margin:0;font-family:'Playfair Display',serif;color:var(--gold)}
+.curso-meta{display:flex;justify-content:space-between;align-items:center;margin-top:12px}
+
+/* Painel detalhes (inline in cursos) */
+.detalhes-panel{margin:28px 0}
+.detalhes-main{display:grid;grid-template-columns:420px 1fr;gap:20px;align-items:start}
+.banner-detalhe img{width:100%;height:100%;object-fit:cover;border-radius:10px}
+.topico-aprendizado{display:flex;gap:14px;align-items:flex-start;padding:12px;border-radius:8px;background:var(--accent);margin-bottom:14px}
+.topico-aprendizado img{width:84px;height:84px;object-fit:cover;border-radius:8px}
+.topico-aprendizado h4{margin:0;font-family:'Playfair Display',serif;color:#222}
+.beneficios-lista{list-style:none;padding:0;margin:0}
+.beneficios-lista li{padding:10px 0;border-bottom:1px solid #f0ece8;color:var(--muted)}
+
+/* Form contato / inscrição */
+.form {background:var(--card);padding:18px;border-radius:12px;box-shadow:0 12px 36px var(--shadow)}
+.form label{display:block;margin-top:12px;color:#333}
+.form input,.form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #eee;margin-top:6px}
+
+/* Footer */
+.site-footer{background:transparent;padding:28px 0;margin-top:40px;border-top:1px solid #f0ece8}
+.footer-inner{display:flex;justify-content:space-between;align-items:center}
+
+/* Utilities */
+.hidden{display:none}
+
+/* Responsivo */
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr}
+  .grid-3{grid-template-columns:1fr}
+  .detalhes-main{grid-template-columns:1fr}
+}
+@media (max-width:520px){
+  .nav nav{display:none}
+  .highlights{flex-direction:column}
+}

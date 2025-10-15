@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cursos — Academia de Luxo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Academia de Luxo</a>
+      <nav>
+        <a href="index.html">Início</a>
+        <a class="active" href="cursos.html">Cursos</a>
+        <a href="index.html#por-que">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="search-wrap">
+      <input id="busca-curso" type="search" placeholder="Buscar curso por nome, tópico ou professor..." aria-label="Buscar curso">
+      <button id="limpar-busca" class="btn ghost">Limpar</button>
+    </section>
+
+    <section id="grid-cursos" class="grid-cursos">
+      <!-- preenchido por script.js -->
+    </section>
+
+    <section id="detalhes-curso" class="detalhes-panel hidden">
+      <!-- painel carregado dinamicamente aqui -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Academia de Luxo</strong>
+        <p>Excelência em formação criativa e estratégica.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Início</a>
+        <a href="contato.html">Contato</a>
+      </div>
+    </div>
+    <div class="copyright">© 2025 Academia de Luxo</div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      renderCursosGrid();
+      setupBusca();
+      // se hash presente (ex: cursos.html#design) abre detalhes
+      if(window.location.hash){ openDetailsFromHash(); }
+    });
+  </script>
+</body>
+</html>
